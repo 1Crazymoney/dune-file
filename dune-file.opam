@@ -11,9 +11,9 @@ authors: [
   "Jeremie Dimino <jeremie@dimino.org>"
 ]
 license: "MIT"
-homepage: "https://github.com/diml/dune-files"
-doc: "https://diml.github.io/dune-files/"
-bug-reports: "https://github.com/diml/dune-files/issues"
+homepage: "https://github.com/diml/dune-file"
+doc: "https://diml.github.io/dune-file/"
+bug-reports: "https://github.com/diml/dune-file/issues"
 depends: [
   "dune" {>= "2.0"}
   "ocaml" {>= "4.08.0"}
@@ -33,4 +33,4 @@ build: [
     "@doc" {with-doc}
   ]
 ]
-dev-repo: "git+https://github.com/diml/dune-files.git"
+dev-repo: "git+https://github.com/diml/dune-file.git"

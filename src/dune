@@ -1,6 +1,6 @@
 (library
- (public_name dune-files)
- (name dune_files)
+ (public_name dune-file)
+ (name dune_file)
  (libraries pp)
  (synopsis "Library for reading and editing dune files"))
 
