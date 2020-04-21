@@ -1,0 +1,17 @@
+#! /bin/bash
+#
+# Script for setting up the build environment from external packages.
+#
+set -eu
+
+sudo apt-get install m4 -y
+
+opam repo add --all -k git github https://github.com/ocaml/opam-repository.git
+
+for switch in $(cat .circleci/opam-switches); do
+  echo "Installing dependencies with opam switch $switch"
+  opam switch "$switch"
+  eval $(opam env)
+  opam update
+  opam install -y dune ppx_expect
+done
